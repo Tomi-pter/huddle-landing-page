@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PoppinsExtraLight';
+    src: url('fonts/PoppinsExtraLight.eot');
+    src: url('fonts/PoppinsExtraLight.eot') format('embedded-opentype'),
+         url('fonts/PoppinsExtraLight.woff2') format('woff2'),
+         url('fonts/PoppinsExtraLight.woff') format('woff'),
+         url('fonts/PoppinsExtraLight.ttf') format('truetype'),
+         url('fonts/PoppinsExtraLight.svg#PoppinsExtraLight') format('svg');
+}

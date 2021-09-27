@@ -1,3 +1,154 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('fonts/PoppinsRegular.eot');
+    src: url('fonts/PoppinsRegular.eot') format('embedded-opentype'), url('fonts/PoppinsRegular.woff2') format('woff2'), url('fonts/PoppinsRegular.woff') format('woff'), url('fonts/PoppinsRegular.ttf') format('truetype'), url('fonts/PoppinsRegular.svg#PoppinsRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('fonts/PoppinsSemiBold.eot');
+    src: url('fonts/PoppinsSemiBold.eot') format('embedded-opentype'), url('fonts/PoppinsSemiBold.woff2') format('woff2'), url('fonts/PoppinsSemiBold.woff') format('woff'), url('fonts/PoppinsSemiBold.ttf') format('truetype'), url('fonts/PoppinsSemiBold.svg#PoppinsSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular.eot');
+    src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'), url('fonts/OpenSansRegular.woff2') format('woff2'), url('fonts/OpenSansRegular.woff') format('woff'), url('fonts/OpenSansRegular.ttf') format('truetype'), url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --font-sans: 'OpenSansRegular';
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-mobile.svg) no-repeat;
+    background-color: var(--violet);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    color: whitesmoke;
+    font-family: var(--font-sans);
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'PoppinsSemiBold';
+}
+
+p {
+    opacity: .8;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 10rem;
+    height: auto;
+    margin: 1rem 0 3.6rem;
+}
+
+.mock {
+    margin-bottom: 3rem;
+}
+
+button {
+    font-family: 'PoppinsRegular';
+    color: var(--violet);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    border: none;
+    outline: none;
+    padding: .8rem 0;
+    width: 75%;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 3rem;
+}
+
+footer a {
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    margin: 0 .5rem;
+    padding: .5rem;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: var(--soft-magenta);
+    color: whitesmoke;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        background: url(images/bg-desktop.svg) no-repeat fixed;
+        background-color: var(--violet);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        max-width: 90%;
+        flex-direction: row;
+        text-align: left;
+    }
+    article {
+        align-self: center;
+        margin-left: 2rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: .85rem;
+    }
+    button {
+        width: 50%;
+    }
+    .logo {
+        margin: 2rem 0 6rem;
+    }
+    footer {
+        margin: .5rem 3rem;
+        justify-content: flex-end;
+    }
+}
+
+
 /*.attribution {
     font-size: 11px;
     text-align: center;

@@ -29,7 +29,7 @@
 }
 
 body {
-    background: url(images/bg-mobile.svg) no-repeat;
+    background: url(images/bg-mobile.svg) no-repeat fixed;
     background-color: var(--violet);
     display: flex;
     flex-direction: column;
@@ -91,12 +91,18 @@ footer {
 
 footer a {
     border-radius: 50%;
+    width: 35px;
     border: 1px solid whitesmoke;
     margin: 0 .5rem;
     padding: .5rem;
     color: white;
     text-decoration: none;
     outline: none;
+    text-align: center;
+}
+
+a span {
+    display: none;
 }
 
 button:hover,
@@ -131,16 +137,17 @@ a:focus {
         margin-left: 2rem;
     }
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     p {
-        font-size: .85rem;
+        font-size: 1rem;
     }
     button {
         width: 50%;
     }
     .logo {
         margin: 2rem 0 6rem;
+        max-width: 12.5rem;
     }
     footer {
         margin: .5rem 3rem;
